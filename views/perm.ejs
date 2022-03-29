@@ -1,0 +1,42 @@
+<!-- Wappler include is="dmx-app" id="perm" appconnect="local" framework7_6="With App Connect" framework7_icons="local" capacitor="local" head-page="index.html" -->
+<meta name="ac:route" content="/perm">
+<dmx-api-action id="api1" noload="true"></dmx-api-action>
+<form is="dmx-serverconnect-form" id="serverconnectform2" method="post"></form>
+<dmx-serverconnect id="serverconnect1"></dmx-serverconnect>
+<script is="dmx-flow" id="flow1" type="text/dmx-flow" src=""></script>
+<div id="login1" data-name="login1" class="page no-navbar no-toolbar no-swipeback login-screen-page">
+    <div class="page-content login-screen-content">
+        <div class="login-screen-title">My App</div>
+        <form method="post" is="dmx-serverconnect-form" id="serverconnectform1" action="https://db.fayziyya.com/dmxConnect/api/LogIn.php" site="Fayziyya DB" credentials>
+            <div class="list">
+                <ul>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Username</div>
+                            <div class="item-input">
+                                <input type="text" name="username" placeholder="Username">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Password</div>
+                            <div class="item-input">
+                                <input type="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#" class="item-link list-button">Sign In</a></li>
+                </ul>
+                <div class="block-footer">
+                    <p>Some text about login information.</p>
+                    <p><a href="#" class="link back">Close Login Screen</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

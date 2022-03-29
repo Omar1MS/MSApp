@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <meta charset="UTF-8">
+    <title>MS 1.0</title>
+    <!-- New Wappler Page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <link rel="stylesheet" href="Framework7/6/css/framework7-bundle.min.css" />
+    <script src="cordova.js"></script>
+    <script src="Framework7/6/js/framework7-bundle.min.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="dmxAppConnect/dmxFramework7_6/dmxFramework7_6.js" defer=""></script>
+    <link rel="stylesheet" href="dmxFramework7_icons/css/framework7-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome5/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+
+    <script src="capacitor.js"></script>
+    <link rel="stylesheet" href="dmxAppConnect/dmxAnimateCSS/animate.min.css" />
+    <script src="dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js"></script>
+    <script src="dmxAppConnect/dmxSwiper/dmxSwiper.js"></script>
+    <script src="dmxAppConnect/dmxSwiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="dmxAppConnect/dmxSwiper/themes/default.css" />
+</head>
+
+<body is="dmx-app" id="msapp">
+    <dmx-serverconnect id="serverconnect1"></dmx-serverconnect>
+    <div id="app" is="dmx-f7-app">
+        <!-- Statusbar overlay -->
+
+
+
+        <div class="views">
+            <div id="main" class="view view-main tabs">
+
+                <!-- Initial Page, "data-name" contains page name -->
+
+
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="" class="link panel-open with-animation icon-only" data-transition="f7-cover-v"><i class="icon f7-icons text-color-black">list_dash</i>
+                            </a>
+                        </div>
+                        <div class="title sliding">MS 1.0 App</div>
+                    </div>
+                </div>
+
+
+                <div class="toolbar toolbar-bottom tabbar tabbar-labels toolbar-bottom-md">
+                    <div class="toolbar-inner">
+                        <a href="#pg1" class="tab-link-active with-animation tab-link" data-transition="f7-push">
+                            <i class="icon f7-icons">person_alt</i>
+                            <span class="tabbar-label">Account</span>
+                        </a>
+                        <a href="#pg2" class="card-open tab-link" data-popup="#Messages_popup" data-transition="f7-push">
+                            <i class="icon f7-icons">today_fill<span class="badge color-red">1</span></i>
+                            <span class="tabbar-label">Messages</span>
+                        </a>
+                        <a class="tab-link" data-popover="#popover1" href="/perm">
+                            <i class="icon f7-icons">cloud_fill</i>
+                            <span class="tabbar-label">Upload</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="index" class="page " data-name="index">
+
+
+
+                    <!-- Top Navbar -->
+
+
+
+
+
+
+
+
+                    <div id="Messages_popup" class="popup" close-on-escape="true" swipe-to-close="true">
+                        <div class="view navbar-fixed" id="Messages_view">
+                            <div class="pages navbar-through toolbar-through">
+                                <div class="page" id="Messages_page">
+                                    <div class="navbar">
+                                        <div class="navbar-bg"></div>
+                                        <div class="navbar-inner">
+                                            <div class="Messages_view.nter">Messages</div>
+                                            <div class="right"><a href="#" class="link popup-close">Done</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="page-content">
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="popover1" class="popover">
+                        <div class="popover-angle"></div>
+                        <div class="popover-inner">
+                            <div class="list wappler-block">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><i class="icon f7-icons text-color-lightblue">person_crop_circle</i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title">Item title</div>
+                                                <div class="item-after">Label</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><i class="icon f7-icons text-color-pink">person_crop_circle</i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title">Item with badge</div>
+                                                <div class="item-after"><span class="badge">5</span></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><i class="icon f7-icons text-color-orange">person_crop_circle</i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title">Another item</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toolbar -->
+
+                    <!-- Scrollable page content -->
+                    <div class="tabs-animated-wrap">
+                        <div class="tabs">
+                            <div id="pg1" class="page-content wappler-block tab tab-active keep-navbar-on-scroll hide-tabbar-on-scroll">
+                                <div class="card facebook-card wappler-block">
+                                    <div class="card-header">
+                                        <div class="facebook-avatar"><img class="wappler-type-user" width="34" height="34"></div>
+                                        <div class="facebook-name">John Doe</div>
+                                        <div class="facebook-date">Monday at 2:15 PM</div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-content-inner">
+                                            <p>What a nice photo i took yesterday!</p>
+                                            <img width="100%">
+                                            <div class="row color-gray">
+                                                <div class="col-auto">Likes: 112</div>
+                                                <div class="col-auto text-right">Comments: 43</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="link">Like</a>
+                                        <a href="#" class="link">
+                                            Comment
+                                        </a>
+                                        <a href="#" class="link popover-open" data-popover="#popover1">Share</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-color-deeporange text-color-white">F7 Dialog Test
+                                    </div>
+                                    <div class="card-content card-content-padding">
+                                        <div class="card-content-inner">
+                                            <div class="row">
+                                                <div class="col-auto" dmx-style:font-size:.important="8">
+                                                    <div class="segmented segmented-round segmented-strong" dmx-style:font-size.important="2">
+                                                        <a href="#" class="button button-round color-yellow icon-only" dmx-on:click="alert.run()" dmx-style:font-size.important="8">Alert</a>
+                                                        <a href="#" class="button color-green" dmx-on:click="confirm.run()">Confirm</a>
+                                                    </div>
+                                                    <div class="segmented segmented-round segmented-strong" dmx-style:font-size.important="2">
+                                                        <a href="#" class="button color-lime" dmx-on:click="prompt.run()">Prompt</a>
+                                                        <a href="#" class="button color-teal" dmx-on:click="login.run()">Login</a>
+                                                        <a href="#" class="button button-round color-red" dmx-on:click="password.run()">Password</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="block-title">All in One </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="button button-round button-fill" dmx-on:click="aio.run()">All in One Button</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </div>
+                                <script is="dmx-flow" id="login" type="text/dmx-flow" src="app/flows/login.json"></script>
+                                <script is="dmx-flow" id="alert" type="text/dmx-flow" src="app/flows/alert.json"></script>
+                                <script is="dmx-flow" id="prompt" type="text/dmx-flow" src="app/flows/prompt.json"></script>
+                                <script is="dmx-flow" id="confirm" type="text/dmx-flow" src="app/flows/confirm.json"></script>
+                                <script is="dmx-flow" id="password" type="text/dmx-flow" src="app/flows/password.json"></script>
+                                <script is="dmx-flow" id="aio" type="text/dmx-flow" src="app/flows/aio.json"></script>
+                            </div>
+                            <div id="pg2" class="page-content wappler-block tab keep-navbar-on-scroll hide-tabbar-on-scroll">
+                                <div class="list wappler-block">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"><i class="icon f7-icons text-color-lightblue">person_crop_circle</i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Item title</div>
+                                                    <div class="item-after">Label</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"><i class="icon f7-icons text-color-pink">person_crop_circle</i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Item with badge</div>
+                                                    <div class="item-after"><span class="badge">5</span></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"><i class="icon f7-icons text-color-orange">person_crop_circle</i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Another item</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-left panel-cover">
+        <div id="panel_left_view" class="view">
+            <div class="page color-theme-red no-swipe-panel" id="panel_left_page">
+                <div class="toolbar tabbar tabbar-labels toolbar-bottom toolbar-bottom-md no-shadow">
+                    <div class="toolbar-inner">
+                        <a href="" class="tab-link-active tab-link text-color-red"><i class="icon f7-icons text-color-red">square_arrow_right</i>
+
+                            <span class="tabbar-label">Logout</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="left">UserName</div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="list media-list">
+                        <ul>
+                            <li>
+                                <a href="" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">person_crop_square</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">User Details</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">lock_shield</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Privacy Settings</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">gear_alt</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Account Settings</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">info_circle</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Help</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="statusbar"></div>
+
+    <!-- Your main view, should have "view-main" class -->
+
+
+
+</body>
+
+</html>

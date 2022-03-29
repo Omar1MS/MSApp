@@ -1,0 +1,43 @@
+{
+  "projectName": "MS 1.0",
+  "designFramework": "framework7",
+  "useRouting": true,
+  "routingHandler": "framework7",
+  "routingFile": "/js/routes.js",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "frameworks": [
+    {
+      "name": "framework7_6",
+      "type": "With App Connect"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "framework7_icons",
+      "type": "local"
+    },
+    {
+      "name": "capacitor",
+      "type": "local"
+    }
+  ],
+  "hostingType": "wappler",
+  "projectServerModel": "node",
+  "projectType": "app",
+  "appFile": "/js/app.js",
+  "capacitor": {
+    "capacitor": {
+      "checked": true
+    },
+    "platform": "web"
+  },
+  "cordova": {
+    "platform": "android",
+    "target": "",
+    "device": "R5CR10PS8YV",
+    "deviceId": "R5CR10PS8YV"
+  }
+}

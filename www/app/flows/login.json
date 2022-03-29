@@ -1,0 +1,3 @@
+{
+  f7.dialog.login: {text: "\n", title: "Enter Login Details", name: "login"}
+}

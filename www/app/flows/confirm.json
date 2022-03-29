@@ -1,0 +1,18 @@
+{
+  f7.dialog.confirm: {
+    text: "text",
+    title: "title",
+    then: {
+      steps: {
+        f7.toast.show: {
+          text: "toast text",
+          position: "top",
+          closeTimeout: 2500,
+          closeButtonColor: "red",
+          closeButtonText: "Close",
+          closeButton: true
+        }
+      }
+    }
+  }
+}

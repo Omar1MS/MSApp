@@ -1,0 +1,31 @@
+{
+  f7.dialog.confirm: {
+    text: "confirm text",
+    title: "confirm title",
+    then: {
+      steps: [
+        {
+          alert: {message: "alert flow"}
+        },
+        {
+          f7.dialog.alert: {text: "alert text", title: "alert title"}
+        },
+        {
+          f7.dialog.prompt: {
+            text: "prompt text",
+            title: "prompt title",
+            defaultValue: "prompt initial value",
+            name: "prompt"
+          }
+        },
+        {
+          f7.dialog.login: {text: "login text", title: "login title", name: "login"}
+        },
+        {
+          f7.dialog.password: {text: "password text", title: "password title", name: "password"}
+        }
+      ]
+    },
+    output: true
+  }
+}

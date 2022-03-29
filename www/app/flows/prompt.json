@@ -1,0 +1,8 @@
+{
+  f7.dialog.prompt: {
+    text: "text",
+    title: "title",
+    defaultValue: "initial Value",
+    name: "prompt"
+  }
+}
